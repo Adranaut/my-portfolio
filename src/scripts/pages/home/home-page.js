@@ -396,7 +396,7 @@ class HomePage extends HTMLElement {
         </section>
 
         <section class="achievement" id="achievement">
-            <h2 class="section-title">Penghargaan</h2>
+            <h2 class="section-title">Pencapaian</h2>
 
             <div class="achievement-wrapper">
                 <div class="achievement-content">
