@@ -21,7 +21,7 @@ class NavBar extends HTMLElement {
             <li><a href="#training">Pelatihan</a></li>
             <li><a href="#experience">Pengalaman</a></li>
             <li><a href="#projects">Proyek</a></li>
-            <li><a href="#achievement">Penghargaan</a></li>
+            <li><a href="#achievement">Pencapaian</a></li>
           </ul>
 
           <div class="nav-actions">
