@@ -1,0 +1,29 @@
+{
+  "name": "my-portofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.common.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start-dev": "webpack-dev-server --config webpack.dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^8.0.2",
+    "babel-loader": "^10.1.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^14.0.0",
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.8",
+    "http-server": "^14.1.1",
+    "mini-css-extract-plugin": "^2.10.2",
+    "scrollreveal": "^4.0.9",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2",
+    "webpack-dev-server": "^6.0.0",
+    "webpack-merge": "^6.0.1"
+  }
+}

@@ -1,0 +1,246 @@
+@media (max-width: 1200px) {
+  section {
+    padding: 7rem 8%;
+  }
+
+  .summary .summary-container {
+    gap: 4rem;
+  }
+
+  .education-flow-container,
+  .training-container,
+  .achievement-wrapper {
+    gap: 3.5rem;
+  }
+
+  .footer-container {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 6.5rem 6%;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .navbar-header {
+    width: 92%;
+    padding: 0.75rem 1.4rem;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 0.8rem);
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    width: 100%;
+    max-width: 500px;
+    background: var(--navbar-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-glass);
+    border-radius: 1.8rem;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 0.8rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .mobile-contact-item {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .mobile-contact-item .nav-btn-contact {
+    width: 100%;
+    padding: 0.65rem 0;
+  }
+
+  .summary .summary-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .info-box {
+    align-items: center;
+  }
+
+  .skill-card {
+    width: calc(50% - 1rem);
+  }
+
+  .education-flow-container,
+  .achievement-wrapper {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .training-container {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .photo-profile,
+  .education-visual img,
+  .training-img,
+  .photo-wisuda {
+    width: 50vw;
+    height: 50vw;
+    max-width: 320px;
+    max-height: 320px;
+  }
+
+  .edu-stats-row,
+  .training-tags {
+    justify-content: center;
+  }
+
+  .edu-list-items,
+  .training-details-list {
+    border-left: none;
+    border-top: 2px solid #e5e5e5;
+    padding-left: 0;
+    padding-top: 1.5rem;
+    text-align: left;
+  }
+
+  .experience-cards-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .achievement-content::before {
+    left: 20px;
+  }
+
+  .achieve-marker {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .main-footer {
+    padding: 4rem 6% 2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  section {
+    padding: 5.5rem 5%;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .info-box h1 {
+    font-size: 2.3rem;
+  }
+
+  .info-box h3 {
+    font-size: 1.15rem;
+  }
+
+  .info-box span {
+    font-size: 1.3rem;
+  }
+
+  .photo-profile {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .skill-card {
+    width: 100%;
+    min-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .campus-name,
+  .training-institute {
+    font-size: 1.5rem;
+  }
+
+  .education-visual img,
+  .training-img,
+  .photo-wisuda {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .stat-pill,
+  .tag-pill {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.8rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .project-btn-group {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .contact .input-box {
+    gap: 1.5rem;
+  }
+
+  .input-box input {
+    padding: 0.9rem 1.2rem 0.9rem 3.2rem;
+    font-size: 0.95rem;
+  }
+
+  .input i {
+    left: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .input-box .btn {
+    padding: 0.8rem 2.5rem;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+}
