@@ -100,7 +100,6 @@ class HomePage extends HTMLElement {
                     </div>
                     <div class="skill-tags">
                         <span>Perakitan Komputer</span>
-                        <span>Hardware Troubleshooting</span>
                     </div>
                 </div>
 
@@ -185,7 +184,7 @@ class HomePage extends HTMLElement {
      
                 <div class="training-visual">
                     <div class="training-image-wrapper">
-                        <img src="./images/nihon.png" alt="Kanji Nihon" class="training-img" />
+                        <img src="./images/pelatihan.jpeg" alt="Kanji Nihon" class="training-img" />
                     </div>
                 </div>
 
@@ -198,8 +197,8 @@ class HomePage extends HTMLElement {
 
                     <div class="training-tags">
                         <span class="tag-pill"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
-                        <span class="tag-pill highlight"><i class="fa-solid fa-certificate"></i> JFT-Basic A2</span>
                         <span class="tag-pill"><i class="fa-solid fa-wrench"></i> SSW Otomotif</span>
+                        <span class="tag-pill highlight"><i class="fa-solid fa-certificate"></i> JFT-Basic A2</span>
                     </div>
 
                     <div class="training-details-list">
@@ -305,28 +304,32 @@ class HomePage extends HTMLElement {
 
                 <div class="project-card">
                     <div class="project-image-box">
-                        <img src="./images/project2.jpg" alt="Platform JAksara" />
+                        <img src="./images/jaksara.png" alt="Web JAksara" />
                         <span class="project-category">Web Platform</span>
                     </div>
 
                     <div class="project-content">
-                        <h3 class="project-title">JAksara — Aksara Jawa Interactive</h3>
+                        <h3 class="project-title">JAksara — Aksara Jawa</h3>
                         <p class="project-desc">
-                        Platform interaktif untuk pelestarian budaya dan pembelajaran kuis Aksara Jawa kuno berbasis web dengan sistem penilaian dinamis dan manajemen RESTful API.
+                            Jaksara adalah sebuah web app yang dibangun untuk membantu orang untuk bisa mempelajari bahasa jawa dengan mudah dan efektif, selain itu juga untuk melestarikan kebudayaan bahasa daerah agar tidak punah dan terus berkembang.
                         </p>
 
                         <div class="project-tech-stack">
                             <span>Node.js</span>
-                            <span>PostgreSQL</span>
+                            <span>Webpack</span>
+                            <span>Progressive Web App</span>
+                            <span>Fetch API</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
                             <span>JavaScript</span>
                             <span>Vercel</span>
                         </div>
 
                         <div class="project-btn-group">
-                            <a href="#" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                            <a href="https://jaksara.vercel.app/" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                             </a>
-                            <a href="https://github.com/Adranaut" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/Adranaut/jaksara" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
@@ -335,14 +338,79 @@ class HomePage extends HTMLElement {
 
                 <div class="project-card">
                     <div class="project-image-box">
-                        <img src="./images/project1.jpg" alt="Aplikasi SiagaKu" />
+                        <img src="./images/backend-app.png" alt="Web Backend JAksara" />
+                        <span class="project-category">Web Platform</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Web Backend JAksara</h3>
+                        <p class="project-desc">
+                            Sistem manajemen konten dan backend yang dirancang untuk mengelola seluruh data materi Aksara Jawa serta bank soal kuis. Dilengkapi dengan integrasi API dan database untuk memastikan distribusi data ke platform JAksara berjalan efisien dan andal.
+                        </p>
+
+                        <div class="project-tech-stack">
+                            <span>Node.js</span>
+                            <span>Webpack</span>
+                            <span>Progressive Web App</span>
+                            <span>Fetch API</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Vercel</span>
+                        </div>
+
+                        <div class="project-btn-group">
+                            <a href="https://backend-jaksara.vercel.app/" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Adranaut/backend-jaksara" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-box">
+                        <img src="./images/backend-api.png" alt="Backend API JAksara" />
+                        <span class="project-category">RESTful API</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Backend API JAksara</h3>
+                        <p class="project-desc">
+                            Layanan RESTful API yang dirancang untuk menangani seluruh logika bisnis, operasi CRUD, dan pemrosesan data materi Aksara Jawa serta bank soal kuis. Terintegrasi dengan database PostgreSQL untuk menjamin manajemen data yang aman, terstruktur, dan efisien saat dikonsumsi oleh aplikasi web JAksara.
+                        </p>
+
+                        <div class="project-tech-stack">
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>JavaScript</span>
+                            <span>Postman</span>
+                            <span>Vercel</span>
+                        </div>
+
+                        <div class="project-btn-group">
+                            <a href="https://api-jaksara-v2.vercel.app/aksara" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Adranaut/api-jaksara-v2" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-box">
+                        <img src="./images/siagaku.png" alt="Aplikasi SiagaKu" />
                         <span class="project-category">Mobile App</span>
                     </div>
 
                     <div class="project-content">
-                        <h3 class="project-title">SiagaKu — Emergency & First Aid</h3>
+                        <h3 class="project-title">SiagaKu</h3>
                         <p class="project-desc">
-                        Aplikasi tanggap darurat berbasis Android yang mengintegrasikan layanan panggilan darurat, chatbot panduan pertolongan pertama berbasis ML, serta pemetaan fasilitas medis terdekat.
+                            Aplikasi tanggap darurat berbasis Android yang mengintegrasikan layanan panggilan darurat, chatbot panduan pertolongan pertama berbasis Machine Learning, serta pemetaan fasilitas medis terdekat.
                         </p>
 
                         <div class="project-tech-stack">
@@ -353,10 +421,10 @@ class HomePage extends HTMLElement {
                         </div>
 
                         <div class="project-btn-group">
-                            <a href="#" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/watch?v=PEJHyna9Kks&list=PLNHc0dm1yfsQ50qqADtfiRNn7Vx_vrEVn" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                             </a>
-                            <a href="https://github.com/Adranaut" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/Adranaut/DaruratIndonesianUrgentResponse" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
@@ -365,33 +433,69 @@ class HomePage extends HTMLElement {
 
                 <div class="project-card">
                     <div class="project-image-box">
-                        <img src="./images/project3.jpg" alt="Web Portofolio" />
-                        <span class="project-category">Front-End Design</span>
+                        <img src="./images/chat-app.png" alt="Adranaut Chat App" />
+                        <span class="project-category">Web Platform</span>
                     </div>
 
                     <div class="project-content">
-                        <h3 class="project-title">Creative Interactive Portfolio</h3>
+                        <h3 class="project-title">Chat App</h3>
                         <p class="project-desc">
-                        Website portofolio interaktif yang dibangun menggunakan Web Components, custom CSS styling modern, serta navigasi responsif dan ramah pengguna.
+                            Aplikasi obrolan real-time yang memungkinkan pengguna berkirim pesan langsung tanpa perlu refresh halaman. Memanfaatkan JavaScript dan layanan Pusher untuk menangani pertukaran pesan yang cepat dan responsif.
                         </p>
 
                         <div class="project-tech-stack">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
+                            <span>Pusher</span>
+                            <span>Fetch API</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
                             <span>JavaScript</span>
-                            <span>Web Components</span>
+                            <span>Vercel</span>
                         </div>
 
                         <div class="project-btn-group">
-                            <a href="#" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                            <a href="https://adranaut-chat-app.vercel.app/" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                             </a>
-                            <a href="https://github.com/Adranaut" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/Adranaut/adranaut-chat-app" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-image-box">
+                        <img src="./images/chat-app-api.png" alt="Chat App API" />
+                        <span class="project-category">RESTful API</span>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Chat App API</h3>
+                        <p class="project-desc">
+                            Layanan backend RESTful API untuk mendukung seluruh alur aplikasi chat. Bertanggung jawab atas autentikasi user yang aman dengan enkripsi Bcrypt, penyimpanan riwayat obrolan di database PostgreSQL, serta pemicu event pesan instan via Pusher.
+                        </p>
+
+                        <div class="project-tech-stack">
+                            <span>Node.js</span>
+                            <span>Pusher</span>
+                            <span>Bcrypt</span>
+                            <span>PostgreSQL</span>
+                            <span>JavaScript</span>
+                            <span>Postman</span>
+                            <span>Vercel</span>
+                        </div>
+
+                        <div class="project-btn-group">
+                            <a href="https://chat-api-gules-one.vercel.app/users" class="project-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Adranaut/chat-api" class="project-btn github-btn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 

@@ -1,17 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 :root {
-  /* Brand Accent Colors */
+  /* Brand Colors */
   --primary-color: #f59e0b;
   --secondary-color: #ef4444;
   --gradient-brand: linear-gradient(to right, #f59e0b, #ff007a);
   --gradient-brand-135: linear-gradient(135deg, #f59e0b, #ff007a);
   --gradient-brand-bottom: linear-gradient(to bottom, #f59e0b, #ff007a);
-
-  --blue-tag-bg: rgba(245, 158, 11, 0.15);
-  --blue-tag-text: #d97706;
-  --blue-tag-border: rgba(245, 158, 11, 0.3);
-  --pink-tag-bg: rgba(255, 0, 122, 0.12);
-  --pink-tag-text: #db2777;
 
   /* Base Background & Text */
   --bg-body: #ffffff;
@@ -33,12 +27,19 @@
   --badge-bg-light: #f4f4f4;
   --badge-bg-alt: rgba(0, 0, 0, 0.04);
   --badge-text-dark: #222222;
-
+  --gold-tag-bg: rgba(245, 158, 11, 0.15);
+  --gold-tag-text: #d97706;
+  --gold-tag-border: rgba(245, 158, 11, 0.3);
+  --pink-tag-bg: rgba(255, 0, 122, 0.12);
+  --pink-tag-text: #db2777;
   --gold-color: #ffd700;
   --gold-text: #b78103;
   --gold-bg: rgba(255, 193, 7, 0.15);
   --gold-border: rgba(255, 193, 7, 0.3);
-
+  --grey-border: rgba(255, 255, 255, 0.2);
+  --grey-bg: rgba(255, 255, 255, 0.05);
+  --grey-tag-bg: rgba(255, 255, 255, 0.15);
+  --grey-text: #dddddd;
   --green-status: #00e676;
 
   /* Navbar & Glassmorphism */
@@ -202,13 +203,8 @@ section {
 
 .photo-wrapper {
   display: inline-block;
-  transition: transform 0.3s ease-in-out;
   cursor: pointer;
   flex-shrink: 0;
-}
-
-.photo-wrapper:hover {
-  transform: scale(1.04);
 }
 
 .photo-profile {
@@ -236,6 +232,11 @@ section {
     smooth to 26.19% 12.51%,
     smooth to 43.15% 12.13%
   );
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-profile:hover {
+  transform: scale(1.03);
 }
 
 .info-box {
@@ -335,14 +336,12 @@ section {
   gap: 1.5rem;
   background-color: var(--bg-card);
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 20px var(--shadow-lg);
 }
 
 .skill-card:hover {
-  transform: translateY(-8px) scale(1.02);
   background-color: var(--text-primary);
   color: var(--text-light);
-  box-shadow: var(--shadow-lg);
 }
 
 .skill-header {
@@ -361,7 +360,7 @@ section {
 }
 
 .skill-card:hover .skill-header i {
-  transform: scale(1.15) rotate(5deg);
+  transform: scale(1.2) rotate(5deg);
 }
 
 .skill-header h3 {
@@ -387,8 +386,8 @@ section {
 }
 
 .skill-card:hover .skill-tags span {
-  border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--grey-border);
+  background: var(--grey-bg);
   color: var(--text-light);
 }
 
@@ -432,26 +431,26 @@ section {
 .score-badge {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--blue-tag-text);
-  background: var(--blue-tag-bg);
+  color: var(--gold-tag-text);
+  background: var(--gold-tag-bg);
   padding: 0.25rem 0.65rem;
   border-radius: 1rem;
-  border: 1px solid var(--blue-tag-border);
+  border: 1px solid var(--gold-tag-border);
 }
 
 .skill-card:hover .lang-item {
-  border-color: rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--grey-border);
+  background-color: var(--grey-bg);
 }
 
 .skill-card:hover .cert-name {
-  color: #dddddd;
-  background: rgba(255, 255, 255, 0.15);
+  color: var(--grey-text);
+  background: var(--grey-tag-bg);
 }
 
 .skill-card:hover .score-badge {
   color: var(--text-light);
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: var(--grey-border);
 }
 
 /* Education */
@@ -516,9 +515,9 @@ section {
 }
 
 .stat-pill.highlight {
-  background: var(--text-primary);
+  background: var(--gradient-brand-135);
   color: var(--text-light);
-  border-color: var(--border-dark);
+  border-color: var(--border-light);
 }
 
 .stat-pill.highlight i {
@@ -575,19 +574,29 @@ section {
   max-height: 380px;
   object-fit: cover;
   clip-path: shape(
-    from 42.3% 9.88%,
-    curve to 62.34% 11.66% with 52.75% 6.32%,
-    smooth to 80.73% 23.69%,
-    smooth to 90.35% 41.48%,
-    smooth to 86.49% 61.86%,
-    smooth to 73.47% 75.81%,
-    smooth to 56.21% 86.86%,
-    smooth to 36.29% 90.21%,
-    smooth to 19.61% 77.55%,
-    smooth to 12.31% 57.71%,
-    smooth to 14.42% 38.18%,
-    smooth to 25% 21.13%,
-    smooth to 42.3% 9.88%
+    from 88.52% 44.83%,
+    curve to 94.07% 56.8% with 91.82% 50%,
+    smooth to 92.59% 69.29%,
+    smooth to 85.01% 80.47%,
+    smooth to 75.45% 89.6%,
+    smooth to 62.65% 90.96%,
+    smooth to 49.41% 92.78%,
+    smooth to 37.67% 93.06%,
+    smooth to 28.25% 84.38%,
+    smooth to 19.63% 76.06%,
+    smooth to 11.29% 67.5%,
+    smooth to 6.3% 56.2%,
+    smooth to 8.32% 44.39%,
+    smooth to 12.52% 32.58%,
+    smooth to 16.7% 20.97%,
+    smooth to 26.68% 14.4%,
+    smooth to 39.12% 14.28%,
+    smooth to 50.02% 15.15%,
+    smooth to 61.71% 12.38%,
+    smooth to 74.67% 12.01%,
+    smooth to 83.88% 20.31%,
+    smooth to 86.01% 33%,
+    smooth to 88.52% 44.83%
   );
   box-shadow: var(--shadow-lg);
   transition: transform 0.3s ease-in-out;
@@ -595,30 +604,6 @@ section {
 
 .education-visual img:hover {
   transform: scale(1.03);
-}
-
-.location-badge {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(8px);
-  color: var(--text-light);
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.5rem 1.2rem;
-  border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  white-space: nowrap;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-}
-
-.location-badge i {
-  color: var(--primary-color);
 }
 
 /* Training */
@@ -735,13 +720,13 @@ section {
 }
 
 .tag-pill.highlight {
-  background: var(--text-primary);
+  background: var(--gradient-brand-135);
   color: var(--text-light);
-  border-color: var(--border-dark);
+  border-color: var(--border-light);
 }
 
 .tag-pill.highlight i {
-  color: var(--green-status);
+  color: var(--gold-color);
 }
 
 .training-details-list {
@@ -793,11 +778,10 @@ section {
   flex-direction: column;
   gap: 2rem;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px var(--shadow-md);
 }
 
 .exp-card:hover {
-  transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
 }
 
@@ -820,7 +804,7 @@ section {
   padding: 0.6rem;
   background: #fafafa;
   flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 10px var(--shadow-md);
 }
 
 .company-logo {
@@ -891,8 +875,8 @@ section {
 }
 
 .star-tag.task {
-  background: var(--blue-tag-bg);
-  color: var(--blue-tag-text);
+  background: var(--gold-tag-bg);
+  color: var(--gold-tag-text);
 }
 
 .star-tag.action {
@@ -938,7 +922,6 @@ section {
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
 }
 
@@ -947,7 +930,7 @@ section {
   width: 100%;
   height: 220px;
   overflow: hidden;
-  border-bottom: 2px solid var(--border-dark);
+  border-bottom: 1px solid var(--border-light);
   background-color: var(--badge-bg-light);
 }
 
@@ -967,7 +950,7 @@ section {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: rgba(0, 0, 0, 0.85);
+  background: var(--gradient-brand);
   backdrop-filter: blur(4px);
   color: var(--text-light);
   font-size: 0.8rem;
@@ -1037,7 +1020,7 @@ section {
 .demo-btn {
   background: var(--text-primary);
   color: var(--text-light);
-  border: 2px solid var(--border-dark);
+  border: 1px solid var(--border-light);
 }
 
 .demo-btn:hover {
@@ -1048,7 +1031,7 @@ section {
 .github-btn {
   background: transparent;
   color: var(--text-primary);
-  border: 2px solid var(--border-dark);
+  border: 1px solid var(--border-light);
 }
 
 .github-btn:hover {
@@ -1100,7 +1083,7 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--text-primary);
+  background: var(--gradient-brand-135);
   color: var(--text-light);
   display: flex;
   align-items: center;
@@ -1111,14 +1094,11 @@ section {
   box-shadow:
     0 0 0 6px var(--bg-body),
     var(--shadow-sm);
-  transition:
-    transform 0.3s ease,
-    background-color 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .achievement-item:hover .achieve-marker {
   transform: scale(1.15);
-  background: var(--gradient-brand-135);
 }
 
 .achieve-details {

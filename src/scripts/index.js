@@ -10,6 +10,14 @@ const navLinks = document.querySelector(".nav-links");
 
 menuIcon.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+
+  if (navLinks.classList.contains("active")) {
+    menuIcon.classList.remove("fa-bars-staggered");
+    menuIcon.classList.add("fa-xmark");
+  } else {
+    menuIcon.classList.remove("fa-xmark");
+    menuIcon.classList.add("fa-bars-staggered");
+  }
 });
 
 
@@ -92,7 +100,7 @@ ScrollReveal().reveal(".project-card", {
 });
 
 // Achievement
-ScrollReveal().reveal(".achievement-item", {
+ScrollReveal().reveal(".achievement-item, .achievement-content", {
   ...scrollRevealOption,
   origin: "left",
   delay: 300,
