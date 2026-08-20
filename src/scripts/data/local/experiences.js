@@ -1,6 +1,6 @@
 const experiences = [
   {
-    image: "./images/dicoding.jpg",
+    image: "./images/dicoding.webp",
     alt: "Logo Dicoding",
     companyName: "SIB Dicoding Cycle 6",
     roleBadge: "Frontend & Backend Web Development",
@@ -11,7 +11,7 @@ const experiences = [
     result: "Terpilih sebagai <strong>\"Capstone Project Terbaik\"</strong> dari puluhan tim atas kualitas teknis dan dampak kontribusinya pada bidang edukasi budaya.",
   },
   {
-    image: "./images/bangkit.jpg",
+    image: "./images/bangkit.webp",
     alt: "Logo Bangkit Academy",
     companyName: "Bangkit Academy Batch 5",
     roleBadge: "Mobile Development",

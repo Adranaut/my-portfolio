@@ -27,7 +27,7 @@ class HomePage extends HTMLElement {
         <section class="summary" id="summary">
             <div class="summary-container">
                 <div class="photo-wrapper">
-                    <img src="./images/profile.jpg" alt="Foto Profile" class="photo-profile" />
+                    <img src="./images/profile.webp" alt="Foto Profile" class="photo-profile" />
                 </div>
 
                 <div class="info-box">
@@ -100,7 +100,7 @@ class HomePage extends HTMLElement {
 
                 <div class="achievement-visual">
                     <div class="achieve-image-box">
-                        <img src="./images/wisuda.JPG" alt="Dokumentasi Wisuda Asep Ramdani" class="photo-wisuda" />
+                        <img src="./images/wisuda.webp" alt="Dokumentasi Wisuda Asep Ramdani" class="photo-wisuda" />
                     </div>
                 </div>
             </div>

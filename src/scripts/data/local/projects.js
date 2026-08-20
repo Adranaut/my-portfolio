@@ -1,6 +1,6 @@
 const projects = [
   {
-    image: "./images/jaksara.png",
+    image: "./images/jaksara.webp",
     alt: "Web JAksara",
     category: "Web Platform",
     title: "JAksara — Aksara Jawa",
@@ -10,7 +10,7 @@ const projects = [
     github: "https://github.com/Adranaut/jaksara",
   },
   {
-    image: "./images/backend-app.png",
+    image: "./images/backend-app.webp",
     alt: "Web Backend JAksara",
     category: "Web Platform",
     title: "Web Backend JAksara",
@@ -20,7 +20,7 @@ const projects = [
     github: "https://github.com/Adranaut/backend-jaksara",
   },
   {
-    image: "./images/backend-api.png",
+    image: "./images/backend-api.webp",
     alt: "Backend API JAksara",
     category: "RESTful API",
     title: "Backend API JAksara",
@@ -30,7 +30,7 @@ const projects = [
     github: "https://github.com/Adranaut/api-jaksara-v2",
   },
   {
-    image: "./images/siagaku.png",
+    image: "./images/siagaku.webp",
     alt: "Aplikasi SiagaKu",
     category: "Mobile App",
     title: "SiagaKu",
@@ -40,7 +40,7 @@ const projects = [
     github: "https://github.com/Adranaut/DaruratIndonesianUrgentResponse",
   },
   {
-    image: "./images/chat-app.png",
+    image: "./images/chat-app.webp",
     alt: "Adranaut Chat App",
     category: "Web Platform",
     title: "Chat App",
@@ -50,7 +50,7 @@ const projects = [
     github: "https://github.com/Adranaut/adranaut-chat-app",
   },
   {
-    image: "./images/chat-app-api.png",
+    image: "./images/chat-app-api.webp",
     alt: "Chat App API",
     category: "RESTful API",
     title: "Chat App API",

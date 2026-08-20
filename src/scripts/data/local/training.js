@@ -1,6 +1,6 @@
 const training = [
   {
-    image: "./images/pelatihan.jpeg",
+    image: "./images/pelatihan.webp",
     alt: "Foto Kelas 4B",
     institute: "Universitas Teknologi Bandung",
     program: "Program Intensif Bahasa Jepang & SSW",

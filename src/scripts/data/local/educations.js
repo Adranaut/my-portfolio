@@ -28,7 +28,7 @@ const educations = [
         description: "Penerapan manajemen proyek perangkat lunak menggunakan kerangka kerja Scrum.",
       },
     ],
-    image: "./images/kampus.jpg",
+    image: "./images/kampus.webp",
     alt: "Kampus Universitas Teknologi Bandung",
   },
 ];
