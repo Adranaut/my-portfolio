@@ -20,7 +20,7 @@ class NavBar extends HTMLElement {
             <li><a href="#education">Pendidikan</a></li>
             <li><a href="#training">Pelatihan</a></li>
             <li><a href="#experience">Pengalaman</a></li>
-            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#project">Proyek</a></li>
             <li><a href="#achievement">Pencapaian</a></li>
           </ul>
 

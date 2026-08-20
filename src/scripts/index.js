@@ -1,4 +1,5 @@
 import "../styles/styles.css";
+import "../styles/home/index.js"
 import "../styles/responsives.css";
 import "./components/index.js";
 import "./pages/home/home-page.js";
@@ -91,7 +92,7 @@ ScrollReveal().reveal(".exp-card", {
   interval: 200,
 });
 
-// Projects
+// Project
 ScrollReveal().reveal(".project-card", {
   ...scrollRevealOption,
   origin: "bottom",

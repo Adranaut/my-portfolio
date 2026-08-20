@@ -1,0 +1,152 @@
+.training-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.training-visual {
+  flex: 0.85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.training-image-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.training-img {
+  width: 28vw;
+  height: 28vw;
+  max-width: 380px;
+  max-height: 380px;
+  object-fit: cover;
+  clip-path: shape(
+    from 45.21% 7.86%,
+    curve to 61.49% 5.65% with 52.83% 4.94%,
+    smooth to 76.76% 12.04%,
+    smooth to 82.43% 27.22%,
+    smooth to 86.66% 42.74%,
+    smooth to 92.02% 56.85%,
+    smooth to 88.38% 72.3%,
+    smooth to 77.48% 83.9%,
+    smooth to 62.26% 85.79%,
+    smooth to 47.67% 84.04%,
+    smooth to 33.33% 84.63%,
+    smooth to 17.4% 80.74%,
+    smooth to 7.11% 68.33%,
+    smooth to 2.82% 51.07%,
+    smooth to 4.5% 34.05%,
+    smooth to 17.97% 24.04%,
+    smooth to 32.67% 16.53%,
+    smooth to 45.21% 7.86%
+  );
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease-in-out;
+  display: block;
+}
+
+.training-img:hover {
+  transform: scale(1.03);
+}
+
+.training-content {
+  flex: 1.15;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.training-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.training-period-pill {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.training-institute {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.training-program {
+  font-size: 1.25rem;
+  font-weight: 500;
+  background: var(--gradient-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.training-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--badge-bg-light);
+  color: var(--badge-text-dark);
+  border: 1px solid var(--border-light);
+}
+
+.tag-pill.highlight {
+  background: var(--gradient-brand-135);
+  color: var(--text-light);
+  border-color: var(--border-light);
+}
+
+.tag-pill.highlight i {
+  color: var(--gold-color);
+}
+
+.training-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-left: 2px solid var(--border-subtle);
+  padding-left: 1.5rem;
+}
+
+.training-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.training-item i {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.training-item p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.training-item p strong {
+  color: var(--text-primary);
+}

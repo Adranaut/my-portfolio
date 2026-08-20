@@ -1,0 +1,142 @@
+.achievement-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.achievement-content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.achievement-content::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 24px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--border-subtle)
+  );
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.achieve-marker {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-brand-135);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  z-index: 2;
+  box-shadow:
+    0 0 0 6px var(--bg-body),
+    var(--shadow-sm);
+  transition: transform 0.3s ease-in-out;
+}
+
+.achievement-item:hover .achieve-marker {
+  transform: scale(1.15);
+}
+
+.achieve-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.achieve-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.achieve-year {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.achieve-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.achieve-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.achieve-desc strong {
+  color: var(--text-primary);
+}
+
+.achievement-visual {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achieve-image-box {
+  position: relative;
+  width: fit-content;
+}
+
+.photo-wisuda {
+  width: 28vw;
+  height: 28vw;
+  max-width: 380px;
+  max-height: 380px;
+  object-fit: cover;
+  clip-path: shape(
+    from 44.57% 9.36%,
+    curve to 58.43% 14.79% with 52.47% 10.76%,
+    smooth to 73.3% 18.83%,
+    smooth to 84.13% 26.82%,
+    smooth to 89.95% 41.75%,
+    smooth to 93.91% 57.13%,
+    smooth to 85.04% 68.99%,
+    smooth to 71.72% 77.4%,
+    smooth to 61.17% 86.6%,
+    smooth to 48.33% 86.9%,
+    smooth to 32.69% 85%,
+    smooth to 17.9% 81.04%,
+    smooth to 7.39% 67.68%,
+    smooth to 1.83% 51.31%,
+    smooth to 9.88% 37.14%,
+    smooth to 21.85% 25.32%,
+    smooth to 30.78% 13.32%,
+    smooth to 44.57% 9.36%
+  );
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease-in-out;
+  display: block;
+}
+
+.photo-wisuda:hover {
+  transform: scale(1.03);
+}

@@ -1,0 +1,7 @@
+import "./summary.css"
+import "./skill.css"
+import "./education.css"
+import "./training.css"
+import "./experience.css"
+import "./project.css"
+import "./achievement.css"

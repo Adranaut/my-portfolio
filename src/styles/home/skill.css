@@ -1,0 +1,136 @@
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skill-card {
+  width: calc(33.333% - 1.4rem);
+  min-width: 300px;
+  border: 1px solid var(--border-light);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--bg-card);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 20px var(--shadow-lg);
+}
+
+.skill-card:hover {
+  background-color: var(--text-primary);
+  color: var(--text-light);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.skill-header i {
+  font-size: 2.2rem;
+  background: var(--gradient-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-header i {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.skill-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tags span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.45rem 1.1rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border-light);
+  background-color: var(--badge-bg-alt);
+  color: var(--badge-text-dark);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover .skill-tags span {
+  border-color: var(--grey-border);
+  background: var(--grey-bg);
+  color: var(--text-light);
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--border-light);
+  background-color: var(--badge-bg-alt);
+  transition: all 0.3s ease;
+}
+
+.lang-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-info strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.cert-name {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--badge-bg-alt);
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.score-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gold-tag-text);
+  background: var(--gold-tag-bg);
+  padding: 0.25rem 0.65rem;
+  border-radius: 1rem;
+  border: 1px solid var(--gold-tag-border);
+}
+
+.skill-card:hover .lang-item {
+  border-color: var(--grey-border);
+  background-color: var(--grey-bg);
+}
+
+.skill-card:hover .cert-name {
+  color: var(--grey-text);
+  background: var(--grey-tag-bg);
+}
+
+.skill-card:hover .score-badge {
+  color: var(--text-light);
+  border-color: var(--grey-border);
+}

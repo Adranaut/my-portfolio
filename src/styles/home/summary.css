@@ -1,0 +1,122 @@
+.summary .summary-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.photo-wrapper {
+  display: inline-block;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.photo-profile {
+  width: 30vw;
+  height: 30vw;
+  max-width: 420px;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+  clip-path: shape(
+    from 43.15% 12.13%,
+    curve to 61.83% 12.75% with 52.09% 16.75%,
+    smooth to 76.04% 17.28%,
+    smooth to 87.82% 32.11%,
+    smooth to 89.45% 47.06%,
+    smooth to 83.45% 63.86%,
+    smooth to 78.23% 79.39%,
+    smooth to 64.72% 89.05%,
+    smooth to 47.08% 92.05%,
+    smooth to 32.44% 85.39%,
+    smooth to 18.84% 73.72%,
+    smooth to 13.13% 60.44%,
+    smooth to 13.77% 43.23%,
+    smooth to 15.15% 26.25%,
+    smooth to 26.19% 12.51%,
+    smooth to 43.15% 12.13%
+  );
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-profile:hover {
+  transform: scale(1.03);
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-box .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-box h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.info-box h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.info-box span {
+  background: var(--gradient-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.info-box p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.socials a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.socials i {
+  font-size: 1.35rem;
+  background: var(--gradient-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: var(--shadow-sm);
+}
+
+.socials a:hover i {
+  transform: rotate(6deg);
+}

@@ -1,0 +1,151 @@
+.education-flow-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.education-content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.edu-year-pill {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.campus-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.major-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--gradient-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 0.3rem;
+}
+
+.edu-stats-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: var(--badge-bg-light);
+  color: var(--badge-text-dark);
+  border: 1px solid var(--border-light);
+}
+
+.stat-pill.highlight {
+  background: var(--gradient-brand-135);
+  color: var(--text-light);
+  border-color: var(--border-light);
+}
+
+.stat-pill.highlight i {
+  color: var(--gold-color);
+}
+
+.edu-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-left: 2px solid var(--border-subtle);
+  padding-left: 1.5rem;
+}
+
+.list-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.list-row i {
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  color: var(--text-primary);
+}
+
+.list-text h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.list-text p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.education-visual {
+  flex: 0.8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.education-visual img {
+  width: 28vw;
+  height: 28vw;
+  max-width: 380px;
+  max-height: 380px;
+  object-fit: cover;
+  clip-path: shape(
+    from 88.52% 44.83%,
+    curve to 94.07% 56.8% with 91.82% 50%,
+    smooth to 92.59% 69.29%,
+    smooth to 85.01% 80.47%,
+    smooth to 75.45% 89.6%,
+    smooth to 62.65% 90.96%,
+    smooth to 49.41% 92.78%,
+    smooth to 37.67% 93.06%,
+    smooth to 28.25% 84.38%,
+    smooth to 19.63% 76.06%,
+    smooth to 11.29% 67.5%,
+    smooth to 6.3% 56.2%,
+    smooth to 8.32% 44.39%,
+    smooth to 12.52% 32.58%,
+    smooth to 16.7% 20.97%,
+    smooth to 26.68% 14.4%,
+    smooth to 39.12% 14.28%,
+    smooth to 50.02% 15.15%,
+    smooth to 61.71% 12.38%,
+    smooth to 74.67% 12.01%,
+    smooth to 83.88% 20.31%,
+    smooth to 86.01% 33%,
+    smooth to 88.52% 44.83%
+  );
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-visual img:hover {
+  transform: scale(1.03);
+}

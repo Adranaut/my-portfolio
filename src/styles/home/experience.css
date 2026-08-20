@@ -1,0 +1,137 @@
+.experience-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.exp-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 30px var(--shadow-md);
+}
+
+.exp-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.exp-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--border-divider);
+  padding-bottom: 1.5rem;
+}
+
+.exp-logo-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 1.2rem;
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  background: #fafafa;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px var(--shadow-md);
+}
+
+.company-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.exp-role-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.role-badge {
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: var(--gradient-brand);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.exp-duration {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+}
+
+.star-framework {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.star-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.star-tag {
+  width: 90px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.6rem;
+  min-width: 75px;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.star-tag.situation {
+  background: var(--badge-bg-light);
+  color: var(--text-secondary);
+}
+
+.star-tag.task {
+  background: var(--gold-tag-bg);
+  color: var(--gold-tag-text);
+}
+
+.star-tag.action {
+  background: var(--pink-tag-bg);
+  color: var(--pink-tag-text);
+}
+
+.star-tag.result {
+  background: var(--text-primary);
+  color: var(--text-light);
+}
+
+.star-item p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.star-item p strong {
+  color: var(--text-primary);
+}
