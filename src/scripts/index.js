@@ -23,7 +23,7 @@ menuIcon.addEventListener("click", () => {
 
 
 const scrollRevealOption = {
-  distance: "40px",
+  distance: window.matchMedia("(max-width: 650px)").matches ? "0px" : "40px",
   duration: 900,
   easing: "cubic-bezier(0.5, 1, 0.89, 1)",
   reset: false,

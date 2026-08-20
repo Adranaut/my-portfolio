@@ -148,6 +148,19 @@
 }
 
 @media (max-width: 650px) {
+  html,
+  body {
+    scrollbar-width: none;
+    overflow-x: hidden;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
   section {
     padding: 5.5rem 5%;
   }
@@ -198,8 +211,8 @@
     padding: 0.35rem 0.8rem;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .project-grid {
+    grid-template-columns: minmax(0, 1fr);
     gap: 1.8rem;
   }
 
