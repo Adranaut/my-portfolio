@@ -15,7 +15,7 @@ class FooterBar extends HTMLElement {
             <div class="footer-col brand-col">
               <h3 class="footer-logo">Asep Ramdani</h3>
               <p class="footer-bio">
-                Software Engineer & Fullstack Developer dengan penggunaan Node.js, arsitektur web modern, serta manajemen proyek berbasis Scrum.
+                IT Support & Software Engineer dengan penggunaan Node.js, arsitektur web modern, serta manajemen proyek berbasis Scrum.
               </p>
               <div class="availability-status">
                 <span class="status-dot"></span>

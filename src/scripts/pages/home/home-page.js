@@ -34,7 +34,7 @@ class HomePage extends HTMLElement {
                     <div class="text">
                         <h3>Hallo, saya</h3>
                         <h1>Asep Ramdani</h1>
-                        <span>Fullstack Developer</span>
+                        <span>IT Support</span>
                         <p>Lulusan Teknik Informatika di Universitas Teknologi Bandung dengan predikat cumlaude. Meraih penghargaan “Wisudawan dengan Skripsi Terbaik” atas pengembangan aplikasi “SiagaKu” serta “Capstone Project Terbaik” pada program SIB Dicoding Cycle 6. Memiliki pengetahuan di bidang IT, termasuk penanganan masalah perangkat keras (hardware troubleshooting) dan konfigurasi sistem operasi. Berfokus pada spesialisasi Back-End Development dengan penggunaan Node.js, PostgreSQL, dan metodologi Scrum. Baru saja menyelesaikan program intensif bahasa Jepang (April 2026) dan siap memberikan kontribusi profesional, baik bagi tim teknis maupun administratif.</p>
                     </div>
 
